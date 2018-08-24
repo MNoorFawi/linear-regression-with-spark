@@ -15,7 +15,7 @@ wget https://archive.ics.uci.edu/ml/machine-learning-databases/00332/OnlineNewsP
 curl -s 'https://archive.ics.uci.edu/ml/machine-learning-databases/00332/OnlineNewsPopularity.zip' -o OnlineNewsPopularity.zip
 
 ## then 
-tar -xvjf onp.zip 
+tar -xvjf OnlineNewsPopularity.zip 
 # x OnlineNewsPopularity/
 # x OnlineNewsPopularity/OnlineNewsPopularity.names
 # x OnlineNewsPopularity/OnlineNewsPopularity.csv
