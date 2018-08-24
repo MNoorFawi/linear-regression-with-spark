@@ -36,9 +36,9 @@ spark-submit \
 target/scala-2.10/onlinenewspopularity_2.10-1.0.jar
 
 ## ******** Training Metrics ********
-## Training Sum of Squared Error is: 4.735797935960768E12
-## Training Root-Mean-Square-Error is: 12224.236916577984
+## Training Sum of Squared Error is: 24047.329603984064
+## Training Root-Mean-Square-Error is: 0.8714524231877528
 ## ******** Test Metrics ********
-## Test Sum of Squared Error is: 5.030924117921555E11
-## Test Root-Mean-Square-Error is: 7967.037281333596
+## Test Sum of Squared Error is: 6162.951282751717
+## Test Root-Mean-Square-Error is: 0.8802962993189899
 ```
