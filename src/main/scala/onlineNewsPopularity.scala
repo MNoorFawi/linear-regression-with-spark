@@ -17,7 +17,7 @@ object onlineNewsPopularity extends App {
   	val data = sc.textFile("OnlineNewsPopularity.csv").
   	filter(line => !line.contains("url")).
   	map(line => line.split(","))
-	val dataPoints = data.map(row => new LabeledPoint(row.last.toDouble, 
+	val dataPoints = data.map(row => new LabeledPoint(math.log(row.last.toDouble), 
   		Vectors.dense(row.slice(2, row.length-1).map(str => str.toDouble)))).cache()
 
 	// split the data into training and test
