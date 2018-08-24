@@ -13,7 +13,7 @@ object onlineNewsPopularity extends App {
   	val sc = new SparkContext(conf)
   	val sqlContext = new SQLContext(sc)
 
-  	// reading the file excluding the header and the first two non-predictive columns
+  	// reading the file excluding the header and the first two non-predictive columns and getting the log of y variable
   	val data = sc.textFile("OnlineNewsPopularity.csv").
   	filter(line => !line.contains("url")).
   	map(line => line.split(","))
