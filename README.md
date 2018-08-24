@@ -15,7 +15,7 @@ wget https://archive.ics.uci.edu/ml/machine-learning-databases/00332/OnlineNewsP
 curl -s 'https://archive.ics.uci.edu/ml/machine-learning-databases/00332/OnlineNewsPopularity.zip' -o OnlineNewsPopularity.zip
 
 ## then 
-tar -xvjf onp.zip > extracted-files
+tar -xvjf onp.zip 
 # x OnlineNewsPopularity/
 # x OnlineNewsPopularity/OnlineNewsPopularity.names
 # x OnlineNewsPopularity/OnlineNewsPopularity.csv
@@ -33,7 +33,7 @@ sbt package
 spark-submit \
 --class onlineNewsPopularity \
 --master local[2] \
-target\scala-2.10\onlinenewspopularity_2.10-1.0.jar
+target/scala-2.10/onlinenewspopularity_2.10-1.0.jar
 
 ## ******** Training Metrics ********
 ## Training Sum of Squared Error is: 4.735797935960768E12
