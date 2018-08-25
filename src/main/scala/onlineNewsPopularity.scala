@@ -5,13 +5,11 @@ import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.regression.LinearRegressionWithSGD
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.SQLContext
 
 object onlineNewsPopularity extends App {
 
 	val conf = new SparkConf().setAppName("onlineNewsPopularity").setMaster("local[2]")
   	val sc = new SparkContext(conf)
-  	val sqlContext = new SQLContext(sc)
 
   	// reading the file excluding the header and the first two non-predictive columns and getting the log of y variable
   	val data = sc.textFile("OnlineNewsPopularity.csv").
