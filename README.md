@@ -8,7 +8,7 @@ We will try to predict Online News Popularity using Linear regression from **Apa
 
 First we download the zip data file, unzip it and then move the csv file to the project directory ...
 
-``` bash
+``` r
 wget https://archive.ics.uci.edu/ml/machine-learning-databases/00332/OnlineNewsPopularity.zip 
 
 ## or with 
@@ -26,7 +26,7 @@ cd project/path
 
 Then we create a JAR package containing the application’s code, then use the spark-submit script to run our program ...
 
-``` bash
+``` r
 sbt package
 
 ## wait until it finishes, then ...
